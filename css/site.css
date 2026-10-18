@@ -1,0 +1,54 @@
+/* Next Level Fitness. Design system da marca: escuro por padrão, vermelho #E60024, Barlow Condensed itálico,
+   tarja inclinada (-12deg), faixas diagonais (60deg), cantos quase retos. */
+@font-face{font-family:'Barlow';font-weight:400;font-display:swap;src:url(/assets/fonts/Barlow-400.woff2) format('woff2')}
+@font-face{font-family:'Barlow';font-weight:600;font-display:swap;src:url(/assets/fonts/Barlow-600.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:italic;font-weight:700;font-display:swap;src:url(/assets/fonts/BarlowCondensed-700i.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:italic;font-weight:800;font-display:swap;src:url(/assets/fonts/BarlowCondensed-800i.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-weight:500;font-display:swap;src:url(/assets/fonts/JetBrainsMono-500.woff2) format('woff2')}
+:root{--fundo:#141414;--superficie:#222;--tinta:#F4F4F1;--suave:#A3A3A0;--linha:#3A3A3A;--marca:#E60024;--marca-texto:#FF4D5E;--sobre-marca:#fff;--inc:-12deg;
+ --display:'Barlow Condensed','Arial Narrow',sans-serif;--texto:'Barlow',Arial,sans-serif;--mono:'JetBrains Mono','Courier New',monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--texto);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}a{color:var(--marca-texto)}
+:focus-visible{outline:3px solid var(--marca-texto);outline-offset:3px}
+.s-wide{max-width:1120px;margin:0 auto;padding:0 24px}.s-wrap{max-width:780px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-style:italic;text-transform:uppercase;margin:0}
+h1{font-weight:800;font-size:clamp(2.8rem,8vw,5.8rem);line-height:.92;letter-spacing:-.01em;text-wrap:balance}
+h2{font-weight:800;font-size:clamp(2rem,4.4vw,3.2rem);line-height:.98;margin:10px 0 16px;text-wrap:balance}
+h3{font-weight:700;font-size:1.6rem;line-height:1;margin:0 0 8px}
+.tarja{display:inline-block;background:var(--marca);color:var(--sobre-marca);padding:0 .18em;transform:skewX(var(--inc))}
+.tarja>span{display:inline-block;transform:skewX(12deg)}
+.rotulo{font-family:var(--mono);font-weight:500;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--marca-texto)}
+.faixas{height:36px;width:180px;margin:16px 0 22px;background:repeating-linear-gradient(60deg,var(--marca) 0 9px,transparent 9px 22px)}
+.s-header{position:sticky;top:0;z-index:50;background:var(--fundo);border-bottom:2px solid var(--linha)}
+.s-header .s-wide{display:flex;align-items:center;justify-content:space-between;height:70px;gap:18px}
+.s-brand{display:flex;align-items:center;gap:12px;color:var(--tinta);text-decoration:none;font-family:var(--display);font-style:italic;font-weight:800;font-size:1.5rem;text-transform:uppercase;line-height:1}
+.s-brand img{width:42px;height:42px;border-radius:50%}
+.s-nav{display:flex;gap:24px;align-items:center}
+.s-nav a:not(.s-btn){font-family:var(--display);font-style:italic;font-weight:700;font-size:1.1rem;text-transform:uppercase;color:var(--tinta);text-decoration:none}
+.s-nav a:not(.s-btn):hover{color:var(--marca-texto)}
+.s-btn{display:inline-flex;align-items:center;justify-content:center;background:var(--marca);color:var(--sobre-marca)!important;text-decoration:none;border-radius:2px;padding:14px 28px;font-family:var(--display);font-style:italic;font-weight:800;font-size:1.25rem;text-transform:uppercase;letter-spacing:.02em;transition:filter .2s}
+.s-btn:hover{filter:brightness(1.12)}.s-btn.small{padding:9px 18px;font-size:1.05rem}
+.s-btn.vazado{background:transparent;box-shadow:inset 0 0 0 2px var(--tinta);color:var(--tinta)!important}
+.h-hero{position:relative;overflow:hidden;background:#000}
+.h-hero img.fundo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%;opacity:.5}
+.h-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,20,.5),rgba(20,20,20,.15) 40%,rgba(20,20,20,.95))}
+.h-hero .s-wide{position:relative;z-index:1;min-height:76vh;padding-top:90px;padding-bottom:60px;display:flex;flex-direction:column;justify-content:flex-end}
+.h-hero p.lead{font-size:1.3rem;max-width:600px;color:#d6d5d0;margin:22px 0 30px}
+.acoes{display:flex;gap:14px;flex-wrap:wrap}
+.h-sec{padding:76px 0}.h-sec.clara{background:#F4F4F1;color:#141414;--tinta:#141414;--suave:#5C5C58;--marca-texto:#C8001F;--superficie:#fff;--linha:#D6D5D0}
+.h-sec p.suave{color:var(--suave);max-width:640px}
+.pilares{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:28px}
+.cartao{background:var(--superficie);padding:26px 26px 28px;border-left:6px solid var(--marca)}
+.cartao .n{font-family:var(--display);font-style:italic;font-weight:800;font-size:2.8rem;line-height:1;color:var(--marca-texto);display:block;margin-bottom:6px}
+.cartao p{margin:0;color:var(--suave);font-size:1rem}
+.s-cta{background:var(--marca);color:#fff;padding:44px 34px;margin:30px 0}
+.s-cta h2{color:#fff}.s-cta p{margin:0 0 24px;max-width:560px}.s-cta .s-btn{background:#141414}
+.s-note{font-size:.88rem;color:var(--suave);border-top:2px solid var(--linha);padding-top:18px;margin-top:34px}
+.s-main p,.s-main li{font-size:1.08rem}
+.s-footer{border-top:2px solid var(--linha);margin-top:70px;padding:40px 0;color:var(--suave);font-size:.95rem}
+.s-footer .cols{display:flex;gap:30px;flex-wrap:wrap;justify-content:space-between;align-items:flex-start}
+.s-footer a{color:var(--suave);display:block;margin:4px 0;text-decoration:none}.s-footer a:hover{color:var(--tinta)}
+.s-footer .assin{display:flex;gap:12px;align-items:center;font-family:var(--display);font-style:italic;font-weight:800;font-size:1.5rem;text-transform:uppercase;color:var(--tinta)}
+.s-footer .assin img{width:42px;height:42px;border-radius:50%}
+@media(max-width:560px){body{font-size:17px}.s-nav a:not(.s-btn){display:none}.h-sec{padding:56px 0}.s-cta{padding:34px 22px}}
