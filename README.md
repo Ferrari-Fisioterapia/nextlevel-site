@@ -1,15 +1,9 @@
-# Site da Next Level Fitness
+# Next Level Fitness Community: site
 
-Site estático pronto para subir num repositório novo e ligar à Vercel. Gerado por `python3 tools/gerar.py`.
-Páginas: home e /membro-fundador/ (lista de interesse, sem prometer vagas). Estilo no design system da Next Level (css/site.css).
+Site estático em nextlevelfitness.com.br (GitHub Pages, branch `main`, pasta raiz). Gerado por `python3 tools/gerar.py`; os textos ficam em `tools/conteudo.py`.
 
-## Como publicar
-1. Crie um repositório vazio no GitHub (ex.: `nextlevel-site`) e libere o app do Claude nele.
-2. Copie o conteúdo desta pasta para a raiz do repositório e faça o commit.
-3. Na Vercel, importe o repositório (sem build) e adicione o domínio `nextlevelfitness.com.br` (e `www`).
-4. Confirme se o site atual do domínio tem páginas que precisam continuar existindo (ex.: /membro-fundador, que já está na bio do Instagram: esta versão mantém esse endereço).
-
-## Antes de publicar, o Ed confirma
-- Endereço principal com ou sem www (o código usa www).
-- Texto "Quem está por trás" e os 4 pilares.
-- Contato: usa o direct do Instagram (ig.me). Se preferir WhatsApp, trocar `DM` em tools/gerar.py.
+- Páginas: home, /comunidade/, /hyrox/, /crossfit/, /athx/, /corrida/, /blog/ (4 artigos), /membro-fundador/, 404.
+- Efeitos: vídeo de fundo na home (`assets/video/hero.mp4`, feito das fotos do banco do Ed), faixa de palavras, revelar ao rolar, transição entre páginas, menu mobile e botão fixo no celular. Tudo respeita "reduzir movimento".
+- Para trocar o vídeo da home por um do Ed: salvar como `assets/video/hero.mp4` (MP4 H.264, sem áudio, até uns 3 MB).
+- Regras: sem promessa de resultado, sem depoimento, sem preço, sem inventar local, horário ou vagas.
+- Fotos: banco Unsplash do Ed (ver equipe-marketing/imagens/LICENCAS.md).
