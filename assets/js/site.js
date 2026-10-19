@@ -32,7 +32,7 @@
   var mn=document.getElementById('mn');
   if(mn)document.querySelectorAll('.s-nav a').forEach(function(a){a.addEventListener('click',function(){mn.checked=false})});
   // Google Analytics 4: só liga quando o ID de medição (G-XXXXXXX) for preenchido
-  var GA_ID='';
+  var GA_ID='G-56KHSPJ3QG';
   if(GA_ID){
     var gs=document.createElement('script');gs.async=true;gs.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(gs);
     window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};
