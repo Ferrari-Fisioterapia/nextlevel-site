@@ -217,4 +217,25 @@ ARTIGOS = {
         ],
         "relacionados": ["crossfit", "hyrox"],
     },
+    "hyrox-tampa-2026-proxima-etapa": {
+        "data": "2026-10-21",
+        "titulo": "Hyrox Tampa 2026: a próxima etapa do circuito, de 22 a 25 de outubro",
+        "desc": "Depois de São Paulo, o Hyrox segue para Tampa (EUA), de 22 a 25 de outubro de 2026. Veja o que se sabe da etapa e o que dá para aprender com o calendário da temporada.",
+        "foto": "costas-sled", "pos": "50% 40%", "tag": "Radar",
+        "corpo": [
+            ("p", "O circuito do Hyrox não para: depois da etapa de São Paulo, a próxima parada é Tampa, na Flórida (EUA). A página oficial do evento, no <a href=\"https://hyrox.com/event/hyrox-tampa/\" rel=\"noopener\" target=\"_blank\">site do Hyrox</a>, marca a prova de 22 a 25 de outubro de 2026."),
+            ("h2", "O que se sabe até agora"),
+            ("ul", [
+                "Data: de 22 a 25 de outubro de 2026, em quatro dias de evento.",
+                "Local: Tampa Convention Center, no centro da cidade, segundo as informações públicas do evento.",
+                "Brasil: a temporada 2026/2027 foi aberta em São Paulo, em 17 de outubro, no Distrito Anhembi, com provas individuais, em duplas e em revezamento."]),
+            ("h2", "Por que acompanhar o calendário"),
+            ("p", "Olhar o calendário de outras etapas ajuda a planejar a sua própria temporada: escolher uma prova-alvo, trabalhar para trás o período de preparação e combinar com a dupla ou o grupo de treino. Quem treina em comunidade costuma manter melhor a regularidade."),
+            ("h2", "Viajar para competir"),
+            ("p", "Se a sua prova exige viagem, chegue com antecedência, hidrate-se e evite estrear tênis, estratégia de ritmo ou alimentação na semana da competição. Voos longos e muitas horas sentado cobram lombar e quadril, então levante e se movimente durante o trajeto."),
+            ("p", "Quer entender o formato da prova antes de escolher a sua? Leia <a href=\"/blog/como-comecar-no-hyrox/\">Como começar no Hyrox</a> e veja a <a href=\"/hyrox/\">página de Hyrox da comunidade</a>."),
+            ("p", "Este texto é um resumo independente do calendário oficial e não tem vínculo com a organização do Hyrox. Confira sempre datas e regras no site oficial do evento."),
+        ],
+        "relacionados": ["hyrox", "athx"],
+    },
 }

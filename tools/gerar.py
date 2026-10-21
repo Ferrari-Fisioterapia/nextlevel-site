@@ -226,7 +226,7 @@ def artigo(slug):
     c = f"/blog/{slug}/"
     ld = [org_ld(), crumbs([("Início", "/"), ("Blog", "/blog/"), (a["titulo"], c)]),
           {"@context": "https://schema.org", "@type": "BlogPosting", "headline": a["titulo"], "description": a["desc"], "inLanguage": "pt-BR",
-           "datePublished": DATA, "dateModified": DATA, "image": f"{BASE}/assets/img/{a['foto']}.webp",
+           "datePublished": a.get("data", DATA), "dateModified": a.get("data", DATA), "image": f"{BASE}/assets/img/{a['foto']}.webp",
            "author": {"@type": "Person", "name": "Ed Ferrari Jr", "url": ED + "/"}, "publisher": {"@id": BASE + "/#org"}, "mainEntityOfPage": BASE + c}]
     corpo = ""
     for t, v in a["corpo"]:
@@ -235,7 +235,7 @@ def artigo(slug):
         elif t == "ul": corpo += "<ul>" + "".join(f"<li>{esc(i)}</li>" for i in v) + "</ul>"
     rel = "".join(f'<a class="s-btn vazado small" href="/{s}/">{MODALIDADES[s]["nome"]}</a>' for s in a["relacionados"])
     return c, head(a["titulo"] + " | " + NOME, a["desc"], c, ld, og=f"{BASE}/assets/img/{a['foto']}.webp") + f"""<main>
-<section class="pg-hero com-foto"><div class="fundo-img" style="--pos:{a['pos']}">{foto(a['foto'], a['titulo'], 1600, 1000, lazy=False)}</div><div class="s-wrap"><span class="rotulo">{a['tag']} · {DATA[8:10]}/{DATA[5:7]}/{DATA[:4]}</span><div class="faixas"></div>
+<section class="pg-hero com-foto"><div class="fundo-img" style="--pos:{a['pos']}">{foto(a['foto'], a['titulo'], 1600, 1000, lazy=False)}</div><div class="s-wrap"><span class="rotulo">{a['tag']} · {a.get('data', DATA)[8:10]}/{a.get('data', DATA)[5:7]}/{a.get('data', DATA)[:4]}</span><div class="faixas"></div>
 <h1 class="h1-menor">{a['titulo']}</h1></div></section>
 <article class="h-sec"><div class="s-wrap s-main">{corpo}
 <div class="outras"><span class="rotulo">Veja também</span><div class="acoes">{rel}<a class="s-btn vazado small" href="/blog/">Todos os artigos</a></div></div>
@@ -298,9 +298,10 @@ if __name__ == "__main__":
     urls = []
     for c, h in paginas:
         escrever(c, h); urls.append(c)
+    ultimo = {f"/blog/{k}/": v["data"] for k, v in ARTIGOS.items() if "data" in v}
     c, h = erro404(); escrever(c, h)
     prio = {"/": "1.0"}
-    itens = "".join(f"  <url><loc>{BASE}{c}</loc><lastmod>{DATA}</lastmod><priority>{prio.get(c, '0.7')}</priority></url>\n" for c in urls)
+    itens = "".join(f"  <url><loc>{BASE}{c}</loc><lastmod>{ultimo.get(c, DATA)}</lastmod><priority>{prio.get(c, '0.7')}</priority></url>\n" for c in urls)
     open(os.path.join(RAIZ, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{itens}</urlset>\n')
     open(os.path.join(RAIZ, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
     print(len(urls), "páginas")
