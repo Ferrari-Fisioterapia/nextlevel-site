@@ -238,4 +238,24 @@ ARTIGOS = {
         ],
         "relacionados": ["hyrox", "athx"],
     },
+    "athx-final-2026-lisboa": {
+        "data": "2026-10-22",
+        "titulo": "ATHX 2026: a final será em Lisboa, de 27 a 29 de novembro",
+        "desc": "O ATHX marcou a final de 2026 para Lisboa, de 27 a 29 de novembro. Veja o que o site oficial informa, as próximas etapas e como acompanhar com a comunidade.",
+        "foto": "overhead", "pos": "50% 30%", "tag": "Radar",
+        "corpo": [
+            ("p", "O ATHX, competição híbrida com etapas em várias cidades, já tem local e data para a final de 2026. Segundo o <a href=\"https://athxgames.com/finals-qualification/2026\" rel=\"noopener\" target=\"_blank\">site oficial</a>, ela acontece de 27 a 29 de novembro, no Lisbon Exhibition and Congress Centre, em Lisboa."),
+            ("h2", "O que se sabe"),
+            ("ul", [
+                "Final: de 27 a 29 de novembro de 2026, em Lisboa.",
+                "Classificação: as vagas são conquistadas nas etapas disputadas ao longo de 2026.",
+                "Próximas etapas no calendário oficial: Amsterdam e Los Angeles, ambas em 7 de novembro.",
+                "Formato: cerca de 2 horas e meia em seis zonas, segundo o ATHX."]),
+            ("h2", "Por que acompanhar"),
+            ("p", "Conhecer o formato e o calendário ajuda a escolher uma meta para a sua temporada, seja a primeira prova híbrida, seja uma vaga em etapa. Treinar em dupla ou em grupo torna mais fácil manter a constância durante a preparação."),
+            ("p", "Quer entender como o ATHX se compara a outras provas? Veja a <a href=\"/athx/\">página de ATHX da comunidade</a> e leia <a href=\"/blog/como-comecar-no-hyrox/\">Como começar no Hyrox</a>."),
+            ("p", "Este texto é um resumo independente do que consta no site oficial do ATHX e não tem vínculo com a organização. Confira sempre datas e regras no site oficial."),
+        ],
+        "relacionados": ["athx", "hyrox"],
+    },
 }
