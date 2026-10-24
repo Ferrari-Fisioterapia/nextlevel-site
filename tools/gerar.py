@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Gera o site Next Level Fitness Community (home, comunidade, modalidades, blog, membro fundador, 404, sitemap, robots).
 Textos em tools/conteudo.py. Uso: python3 tools/gerar.py"""
-import json, os, sys
+import json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from conteudo import PILARES, PASSOS, HOME_FAQ, MODALIDADES, ARTIGOS
+from conteudo import PILARES, PASSOS, HOME_FAQ, MODALIDADES, ARTIGOS, TEMAS
 
 NOME = "Next Level Fitness Community"
 BASE = "https://www.nextlevelfitness.com.br"
@@ -112,11 +112,41 @@ def cards_modalidades():
     return out
 
 
-def cards_artigos(slugs):
+def temas(a):
+    """Temas do artigo; sem o campo "temas", deduz pelo título e pela tag."""
+    if a.get("temas"):
+        return a["temas"]
+    t = (a["titulo"] + " " + a.get("tag", "")).lower()
+    achados = [k for k in ("hyrox", "crossfit", "athx", "corrida", "radar") if k in t]
+    if any(x in t for x in ("dor", "lesão", "aquec")):
+        achados.append("prevencao")
+    return achados or ["habitos"]
+
+
+def data_br(a):
+    d = a.get("data", DATA)
+    return f"{d[8:10]}/{d[5:7]}/{d[:4]}"
+
+
+def leitura(a):
+    txt = " ".join(v if isinstance(v, str) else " ".join(v) for _, v in a["corpo"])
+    return max(1, -(-len(re.sub(r"<[^>]+>", " ", txt).split()) // 200))
+
+
+def recentes():
+    """Slugs do mais novo para o mais antigo (sem "data" contam como DATA, na ordem do dicionário)."""
+    return sorted(ARTIGOS, key=lambda s: ARTIGOS[s].get("data", DATA), reverse=True)
+
+
+def cards_artigos(slugs, destaque=False):
     out = ""
-    for s in slugs:
+    for i, s in enumerate(slugs):
         a = ARTIGOS[s]
-        out += f"""<a class="post rv" href="/blog/{s}/">{foto(a['foto'], a['titulo'], 900, 600)}<span class="rotulo">{a['tag']}</span><h3>{a['titulo']}</h3><p>{a['desc']}</p></a>"""
+        tt = temas(a)
+        d = destaque and i == 0
+        busca = esc(" ".join([a["titulo"], a["desc"], a.get("tag", "")] + [TEMAS[t] for t in tt]).lower())
+        rot = ("Mais recente · " if d else "") + a["tag"]
+        out += f"""<a class="post rv{' post-dest' if d else ''}" href="/blog/{s}/" data-temas="{' '.join(tt)}" data-busca="{busca}">{foto(a['foto'], a['titulo'], 900, 600, lazy=i > 1)}<span class="rotulo">{rot}</span><h3>{a['titulo']}</h3><p>{a['desc']}</p><span class="post-meta">{data_br(a)} · {leitura(a)} min de leitura</span></a>"""
     return out
 
 
@@ -156,7 +186,7 @@ def home():
 <p>A comunidade é criada por <a href="{ED}">Ed Ferrari Jr</a>, fisioterapeuta ortopédico e esportivo (CREFITO-3/306266-F). O foco é ajudar quem treina a ter constância, técnica e cuidado com o corpo.</p></div></section>
 
 <section class="h-sec"><div class="s-wide"><span class="rotulo">Blog</span><h2>Para ler e aplicar no treino.</h2>
-<div class="posts">{cards_artigos(list(ARTIGOS)[:3])}</div>
+<div class="posts">{cards_artigos(recentes()[:3])}</div>
 <p style="margin-top:28px"><a class="s-btn vazado" href="/blog/">Ver todos os artigos</a></p></div></section>
 
 <section class="h-sec"><div class="s-wrap"><span class="rotulo">Perguntas frequentes</span><h2>Dúvidas comuns.</h2><div class="faqs">{faq_html(HOME_FAQ)}</div></div></section>
@@ -234,12 +264,18 @@ def artigo(slug):
         elif t == "h2": corpo += f"<h2>{v}</h2>"
         elif t == "ul": corpo += "<ul>" + "".join(f"<li>{esc(i)}</li>" for i in v) + "</ul>"
     rel = "".join(f'<a class="s-btn vazado small" href="/{s}/">{MODALIDADES[s]["nome"]}</a>' for s in a["relacionados"])
+    tt = temas(a)
+    chips = "".join(f'<a class="b-chip" href="/blog/?tema={t}">{TEMAS[t]}</a>' for t in tt)
+    # continue lendo: mais temas em comum primeiro, depois os mais recentes
+    outros = [s for s in recentes() if s != slug]
+    outros.sort(key=lambda s: len(set(temas(ARTIGOS[s])) & set(tt)), reverse=True)
     return c, head(a["titulo"] + " | " + NOME, a["desc"], c, ld, og=f"{BASE}/assets/img/{a['foto']}.webp") + f"""<main>
-<section class="pg-hero com-foto"><div class="fundo-img" style="--pos:{a['pos']}">{foto(a['foto'], a['titulo'], 1600, 1000, lazy=False)}</div><div class="s-wrap"><span class="rotulo">{a['tag']} · {a.get('data', DATA)[8:10]}/{a.get('data', DATA)[5:7]}/{a.get('data', DATA)[:4]}</span><div class="faixas"></div>
-<h1 class="h1-menor">{a['titulo']}</h1></div></section>
+<section class="pg-hero com-foto"><div class="fundo-img" style="--pos:{a['pos']}">{foto(a['foto'], a['titulo'], 1600, 1000, lazy=False)}</div><div class="s-wrap"><span class="rotulo">{a['tag']} · {data_br(a)} · {leitura(a)} min de leitura</span><div class="faixas"></div>
+<h1 class="h1-menor">{a['titulo']}</h1><div class="b-chips">{chips}</div></div></section>
 <article class="h-sec"><div class="s-wrap s-main">{corpo}
 <div class="outras"><span class="rotulo">Veja também</span><div class="acoes">{rel}<a class="s-btn vazado small" href="/blog/">Todos os artigos</a></div></div>
 <p class="s-note">Por Ed Ferrari Jr, fisioterapeuta (CREFITO-3/306266-F). Conteúdo informativo, sem substituir a avaliação de um profissional de saúde.</p></div></article>
+<section class="h-sec" style="padding-top:0"><div class="s-wide"><span class="rotulo">Continue lendo</span><h2>Você também pode gostar</h2><div class="posts">{cards_artigos(outros[:3])}</div></div></section>
 {cta_bloco()}
 </main>
 """ + foot()
@@ -247,12 +283,20 @@ def artigo(slug):
 
 def blog():
     titulo = f"Blog | {NOME}"
-    desc = "Artigos sobre treino, hábitos, movimento e prevenção de lesão para quem faz Hyrox, CrossFit, corrida e academia."
+    desc = "Treino, prevenção de lesão, hábitos e notícias de Hyrox, CrossFit, ATHX e corrida, em linguagem de quem treina. Busque por tema ou palavra."
+    lista = recentes()
+    usados = {t for s in lista for t in temas(ARTIGOS[s])}
+    chips = '<button type="button" class="b-chip on" data-tema="">Todos</button>' + "".join(
+        f'<button type="button" class="b-chip" data-tema="{t}">{n}</button>' for t, n in TEMAS.items() if t in usados)
     ld = [org_ld(), crumbs([("Início", "/"), ("Blog", "/blog/")])]
     return "/blog/", head(titulo, desc, "/blog/", ld) + f"""<main>
 <section class="pg-hero"><div class="s-wrap"><span class="rotulo">Blog</span><div class="faixas"></div><h1>Para ler e <span class="tarja"><span>aplicar</span></span></h1>
-<p class="lead">Treino, hábitos, movimento e prevenção de lesão, em linguagem de quem treina.</p></div></section>
-<section class="h-sec"><div class="s-wide"><div class="posts">{cards_artigos(list(ARTIGOS))}</div></div></section>
+<p class="lead">Dúvidas de quem treina Hyrox, CrossFit, ATHX e corrida, respondidas sem enrolação, e as notícias do Radar.</p></div></section>
+<section class="h-sec" style="padding-top:10px"><div class="s-wide">
+<div class="b-filtros"><input class="b-busca" type="search" placeholder="Buscar: Hyrox, aquecimento, dor..." aria-label="Buscar no blog" autocomplete="off">
+<div class="b-chips" role="group" aria-label="Filtrar por tema">{chips}</div>
+<p class="b-vazio" hidden>Nenhum artigo encontrado. Tente outra palavra ou <a href="{DM}">mande a sua dúvida no direct</a>: ela pode virar o próximo artigo.</p></div>
+<div class="posts" data-blog>{cards_artigos(lista, destaque=True)}</div></div></section>
 {cta_bloco()}
 </main>
 """ + foot()

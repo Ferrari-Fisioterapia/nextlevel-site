@@ -137,9 +137,14 @@ MODALIDADES = {
     },
 }
 
+# Filtros do blog. Artigo novo: "data" (AAAA-MM-DD) põe no topo; "temas" usa estas chaves.
+TEMAS = {"hyrox": "Hyrox", "crossfit": "CrossFit", "athx": "ATHX", "corrida": "Corrida",
+         "prevencao": "Prevenção de lesão", "habitos": "Hábitos", "radar": "Radar"}
+
 ARTIGOS = {
     "como-comecar-no-hyrox": {
-        "titulo": "Como começar no Hyrox: guia para a primeira prova",
+        "titulo": "Primeira prova de Hyrox: 5 passos para começar sem se perder",
+        "temas": ["hyrox", "prevencao"],
         "desc": "Guia para a primeira prova de Hyrox: formato, estações, ritmo, treino em dupla e cuidados para não se lesionar no caminho.",
         "foto": "costas-sled", "pos": "50% 40%", "tag": "Hyrox",
         "corpo": [
@@ -158,7 +163,8 @@ ARTIGOS = {
         "relacionados": ["hyrox", "corrida"],
     },
     "constancia-vence-motivacao": {
-        "titulo": "Constância vence motivação: como montar uma rotina de treino que dura",
+        "titulo": "Constância vence motivação: 5 jeitos de manter o treino quando a vontade some",
+        "temas": ["habitos"],
         "desc": "Como montar uma rotina de treino que você consiga manter: metas pequenas, horários fixos, descanso planejado e apoio da comunidade.",
         "foto": "corrida-bw", "pos": "50% 50%", "tag": "Hábitos",
         "corpo": [
@@ -177,9 +183,10 @@ ARTIGOS = {
         "relacionados": ["crossfit", "corrida"],
     },
     "dor-no-treino-quando-procurar-um-profissional": {
-        "titulo": "Dor no treino: quando ajustar e quando procurar um profissional",
+        "titulo": "Dor no treino: 5 sinais de que é hora de procurar um profissional",
+        "temas": ["prevencao", "crossfit", "hyrox"],
         "desc": "Nem toda dor no treino é lesão, mas algumas pedem avaliação. Veja sinais de atenção e o que fazer enquanto não consegue consulta.",
-        "foto": "overhead", "pos": "50% 30%", "tag": "Lesão",
+        "foto": "barra-mulher", "pos": "50% 25%", "tag": "Lesão",
         "corpo": [
             ("p", "Desconforto muscular depois de um treino novo é comum. Já a dor que se repete, piora ou muda a forma como você se move merece atenção. Este texto é informativo e não substitui uma avaliação individual."),
             ("h2", "Sinais de que vale procurar um profissional"),
@@ -198,7 +205,8 @@ ARTIGOS = {
         "relacionados": ["crossfit", "hyrox"],
     },
     "como-aquecer-antes-do-treino": {
-        "titulo": "Como aquecer antes do treino: o que faz sentido incluir",
+        "titulo": "Como aquecer antes do treino (e os 4 erros mais comuns)",
+        "temas": ["prevencao", "crossfit", "habitos"],
         "desc": "Aquecimento antes de treinar: por que ele ajuda, o que incluir (geral e específico) e erros comuns de quem pula essa etapa.",
         "foto": "sandbag-dupla", "pos": "50% 30%", "tag": "Movimento",
         "corpo": [
@@ -220,8 +228,9 @@ ARTIGOS = {
     "hyrox-tampa-2026-proxima-etapa": {
         "data": "2026-10-21",
         "titulo": "Hyrox Tampa 2026: a próxima etapa do circuito, de 22 a 25 de outubro",
+        "temas": ["hyrox", "radar"],
         "desc": "Depois de São Paulo, o Hyrox segue para Tampa (EUA), de 22 a 25 de outubro de 2026. Veja o que se sabe da etapa e o que dá para aprender com o calendário da temporada.",
-        "foto": "costas-sled", "pos": "50% 40%", "tag": "Radar",
+        "foto": "sled", "pos": "50% 40%", "tag": "Radar",
         "corpo": [
             ("p", "O circuito do Hyrox não para: depois da etapa de São Paulo, a próxima parada é Tampa, na Flórida (EUA). A página oficial do evento, no <a href=\"https://hyrox.com/event/hyrox-tampa/\" rel=\"noopener\" target=\"_blank\">site do Hyrox</a>, marca a prova de 22 a 25 de outubro de 2026."),
             ("h2", "O que se sabe até agora"),
@@ -241,6 +250,7 @@ ARTIGOS = {
     "athx-final-2026-lisboa": {
         "data": "2026-10-22",
         "titulo": "ATHX 2026: a final será em Lisboa, de 27 a 29 de novembro",
+        "temas": ["athx", "radar"],
         "desc": "O ATHX marcou a final de 2026 para Lisboa, de 27 a 29 de novembro. Veja o que o site oficial informa, as próximas etapas e como acompanhar com a comunidade.",
         "foto": "overhead", "pos": "50% 30%", "tag": "Radar",
         "corpo": [
