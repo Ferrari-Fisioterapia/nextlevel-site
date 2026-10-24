@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Raio-X de Prova | Ezequiel e Alexandre | Next Level</title>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="description" content="Análise da prova de São Paulo 2026: onde estão os minutos para o 1º lugar da categoria 50–54.">
+<meta property="og:title" content="Raio-X de Prova: Ezequiel e Alexandre">
+<meta property="og:description" content="São Paulo 2026, dupla masculina 50–54. Os 4 pontos que valem mais tempo.">
+<meta property="og:image" content="https://www.nextlevelfitness.com.br/assets/img/sled.webp">
+<meta name="theme-color" content="#141414">
+<link rel="icon" href="/assets/img/logo.png">
+<style>
+@font-face{font-family:'Barlow';font-weight:400;font-display:swap;src:url(/assets/fonts/Barlow-400.woff2) format('woff2')}
+@font-face{font-family:'Barlow';font-weight:600;font-display:swap;src:url(/assets/fonts/Barlow-600.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:italic;font-weight:800;font-display:swap;src:url(/assets/fonts/BarlowCondensed-800i.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-weight:500;font-display:swap;src:url(/assets/fonts/JetBrainsMono-500.woff2) format('woff2')}
+:root{--fundo:#141414;--sup:#1f1f1f;--sup2:#2a2a2a;--tinta:#F4F4F1;--suave:#A3A3A0;--linha:#3A3A3A;--marca:#E60024;--marca-t:#FF4D5E;--ok:#3ccf7a;--lider:#8a8a86;
+--display:'Barlow Condensed','Arial Narrow',sans-serif;--texto:'Barlow',Arial,sans-serif;--mono:'JetBrains Mono','Courier New',monospace;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--texto);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.w{max-width:880px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-style:italic;font-weight:800;text-transform:uppercase;margin:0;line-height:.95;text-wrap:balance}
+h1{font-size:clamp(2.4rem,8vw,4.4rem)}h2{font-size:clamp(1.8rem,5vw,2.6rem);margin-bottom:10px}h3{font-size:1.45rem}
+p{margin:0}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.rot{font-family:var(--mono);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--marca-t)}
+.faixas{height:26px;width:150px;background:repeating-linear-gradient(60deg,var(--marca) 0 8px,transparent 8px 20px)}
+.tarja{display:inline-block;background:var(--marca);color:#fff;padding:0 .16em;transform:skewX(-12deg)}.tarja>span{display:inline-block;transform:skewX(12deg)}
+header.top{border-bottom:2px solid var(--linha)}
+header.top .w{display:flex;align-items:center;gap:12px;height:64px}
+header.top img{width:38px;height:38px;border-radius:50%}
+header.top span{font-family:var(--display);font-style:italic;font-weight:800;text-transform:uppercase;font-size:1.25rem;line-height:1}
+header.top small{display:block;font-size:.75rem;color:var(--suave);letter-spacing:.06em}
+.hero{padding-block:44px 30px;display:grid;gap:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--linha);border-radius:2px;padding:4px 12px;font-size:.9rem;background:var(--sup)}
+.chip b{font-family:var(--mono);font-weight:500}
+.lead{font-size:1.15rem;max-width:62ch;color:#dcdcd8}
+section{padding-block:26px}
+/* placar */
+.placar{position:sticky;top:0;z-index:20;background:rgba(20,20,20,.96);backdrop-filter:blur(6px);border-bottom:2px solid var(--linha);padding-top:env(safe-area-inset-top,0px)}
+.placar .w{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding-block:12px}
+.placar .k{display:grid;gap:0}
+.placar .k .l{font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--suave)}
+.placar .k .v{font-family:var(--display);font-style:italic;font-weight:800;font-size:clamp(1.6rem,5.5vw,2.4rem);line-height:1}
+.v.ok{color:var(--ok)}
+/* alavancas */
+.alav{display:grid;gap:12px}
+.card{background:var(--sup);border:2px solid var(--linha);border-radius:3px;padding:16px;display:grid;grid-template-columns:auto 1fr auto;gap:6px 14px;align-items:start;cursor:pointer;transition:border-color .15s}
+.card.on{border-color:var(--marca)}
+.card input{position:absolute;opacity:0;pointer-events:none}
+.card .n{font-family:var(--display);font-style:italic;font-weight:800;font-size:2.4rem;line-height:.9;color:var(--marca-t)}
+.card .g{text-align:right}
+.card .g .t{font-family:var(--display);font-style:italic;font-weight:800;font-size:1.8rem;line-height:1;color:var(--suave)}
+.card.on .g .t{color:var(--ok)}
+.card .g .p{font-size:.8rem;color:var(--suave)}
+.card .d{grid-column:2 / 4;color:#cfcfcb;font-size:.96rem;min-width:0}
+.card .f{grid-column:2 / 4;font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--suave)}
+.sw{width:42px;height:24px;border-radius:12px;background:var(--sup2);border:1px solid var(--linha);position:relative;display:inline-block;vertical-align:middle;margin-right:8px}
+.sw::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--suave);transition:left .15s}
+.card.on .sw{background:var(--marca);border-color:var(--marca)}.card.on .sw::after{left:21px;background:#fff}
+.card:focus-within{outline:3px solid var(--marca-t);outline-offset:2px}
+.meta{background:var(--sup);border:1px solid var(--linha);padding:14px 16px;display:grid;gap:8px;border-radius:3px}
+.meta label{display:flex;justify-content:space-between;gap:10px;font-weight:600}
+input[type=range]{width:100%;accent-color:var(--marca)}
+.ajuda{font-size:.85rem;color:var(--suave)}
+/* ranking */
+.rank{display:grid;gap:6px}
+.rk{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:10px 14px;background:var(--sup);border-left:4px solid var(--linha)}
+.rk.eles{border-left-color:var(--marca);background:#2a1418}
+.rk .pos{font-family:var(--display);font-style:italic;font-weight:800;font-size:1.6rem}
+/* barras */
+.bars{display:grid;gap:12px}
+.br{display:grid;gap:4px}
+.br .top{display:flex;justify-content:space-between;gap:8px;font-size:.92rem}
+.br .top b{font-weight:600}
+.trk{display:grid;gap:3px}
+.bar{height:10px;border-radius:1px}
+.bar.a{background:var(--marca)}.bar.b{background:var(--lider)}
+.leg{display:flex;gap:16px;font-size:.85rem;color:var(--suave);flex-wrap:wrap}
+.leg i{display:inline-block;width:12px;height:10px;margin-right:6px;vertical-align:0}
+.voltas{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;align-items:end;height:170px;padding-top:10px}
+.vt{display:grid;grid-template-rows:1fr auto;gap:4px;height:100%;text-align:center}
+.vt .cols{display:flex;gap:2px;align-items:flex-end;justify-content:center}
+.vt .cols div{width:42%;border-radius:1px 1px 0 0}
+.vt span{font-family:var(--mono);font-size:.7rem;color:var(--suave)}
+.cta{background:var(--marca);color:#fff;padding:26px 20px;display:grid;gap:12px;border-radius:3px}
+.cta a{display:inline-block;background:#fff;color:#141414;text-decoration:none;font-family:var(--display);font-style:italic;font-weight:800;text-transform:uppercase;font-size:1.2rem;padding:12px 22px;border-radius:2px;justify-self:start}
+footer{padding-block:30px 50px;color:var(--suave);font-size:.82rem;display:grid;gap:6px;border-top:1px solid var(--linha);margin-top:20px}
+@media (max-width:560px){.card{grid-template-columns:auto 1fr}.card .g{grid-column:2;text-align:left}.card .d,.card .f{grid-column:1 / 3}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="w"><img src="/assets/img/logo.png" alt="" width="38" height="38"><span>Next Level<small>Fitness Community</small></span></div></header>
+
+<div class="w hero">
+  <span class="rot">Raio-X de Prova · São Paulo 2026 · Dupla masculina 50–54</span>
+  <h1>Ezequiel <span class="tarja"><span>&amp;</span></span> Alexandre</h1>
+  <div class="faixas" aria-hidden="true"></div>
+  <div class="chips"><span class="chip">Tempo <b>1:16:11</b></span><span class="chip">Categoria <b>3º lugar</b></span><span class="chip">Geral <b>#312 de 572</b></span></div>
+  <p class="lead">Vocês empataram com o 1º lugar da categoria em seis das oito estações. Os 6:45 de diferença estão em quatro pontos. Ligue cada um abaixo para ver o tempo e a colocação que vocês teriam.</p>
+</div>
+
+<div class="placar" aria-live="polite"><div class="w">
+  <div class="k"><span class="l">Tempo simulado</span><span class="v num" id="pTempo">1:16:11</span></div>
+  <div class="k"><span class="l">Ganho</span><span class="v ok num" id="pGanho">0:00</span></div>
+  <div class="k"><span class="l">Na categoria</span><span class="v" id="pPos">3º</span></div>
+</div></div>
+
+<main class="w">
+  <section>
+    <span class="rot">Do mais fácil ao mais difícil</span>
+    <h2>Os 4 pontos de melhora</h2>
+    <div class="alav" id="alav"></div>
+    <div class="meta" style="margin-top:14px">
+      <label for="pct"><span>Quanto da diferença vocês recuperam</span><span class="num" id="pctV">100%</span></label>
+      <input type="range" id="pct" min="25" max="100" step="5" value="100">
+      <p class="ajuda">100% é igualar o 1º lugar da categoria em cada ponto ligado. Arraste para ver metas mais curtas.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="rot">Categoria 50–54</span>
+    <h2>Onde vocês ficariam</h2>
+    <div class="rank" id="rank"></div>
+  </section>
+
+  <section>
+    <span class="rot">Estação por estação</span>
+    <h2>Vocês x 1º lugar</h2>
+    <div class="leg"><span><i style="background:var(--marca)"></i>Vocês</span><span><i style="background:var(--lider)"></i>1º lugar 50–54</span></div>
+    <div class="bars" id="est" style="margin-top:12px"></div>
+  </section>
+
+  <section>
+    <span class="rot">As 8 voltas</span>
+    <h2>Onde a corrida escapou</h2>
+    <div class="leg"><span><i style="background:var(--marca)"></i>Vocês</span><span><i style="background:var(--lider)"></i>1º lugar 50–54</span></div>
+    <div class="voltas" id="voltas"></div>
+    <p class="ajuda" style="margin-top:10px">Na 1ª volta vocês foram mais rápidos (4:45 contra 4:49). A maior perda foi na volta 4, logo depois do Sled Pull: 5:09 contra 4:34. As barras começam em 4:00.</p>
+  </section>
+
+  <section>
+    <div class="cta">
+      <h2>Bora para a próxima?</h2>
+      <p>A gente monta o treino em cima desses quatro pontos e refaz o Raio-X depois da próxima prova, para ver o que mudou.</p>
+      <a href="https://ig.me/m/nextlevelfitness.community">Chamar no direct</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Tempos tirados da página pública de resultados da prova de São Paulo 2026. Diferenças de poucos segundos vêm do arredondamento das parciais.</p>
+    <p>Hyrox é marca de terceiros. Esta análise é da Next Level Fitness Community e não tem ligação oficial com a organização da prova.</p>
+  </footer>
+</main>
+
+<script>
+const BASE=4571; // 1:16:11
+const L=[
+ {n:1,t:"Sled Pull",g:111,f:"Facilidade: média-alta · técnica",d:"4:35 contra 2:44. Base firme, mão sobre mão, peso do corpo e trocas curtas entre os dois."},
+ {n:2,t:"Burpee Broad Jump",g:117,f:"Facilidade: média · eficiência e condicionamento",d:"4:23 contra 2:26. Saltos de distância constante, burpee sem pausa e ritmo fixo do início ao fim."},
+ {n:3,t:"Corridas",g:137,f:"Facilidade: baixa · ritmo e base aeróbica",d:"40:04 contra 37:47. Vocês perdem de 8 a 35 segundos por volta a partir da 2ª."},
+ {n:4,t:"Lunges e Wall Balls",g:35,f:"Facilidade: média-baixa · resistência de perna",d:"+0:22 nos Lunges e +0:13 nas Wall Balls."}
+];
+const OUT=[{l:"1º lugar",t:4166},{l:"2º lugar",t:4522},{l:"4º lugar",t:4574}];
+const EST=[["Burpee Broad Jump",263,146],["Sled Pull",275,164],["Sandbag Lunges",222,200],["Wall Balls",249,236],["Remo",299,293],["SkiErg",248,243],["Sled Push",128,129],["Farmers Carry",106,112]];
+const V1=[285,280,300,309,296,304,316,317],V2=[289,264,278,274,288,293,294,290];
+const fmt=s=>{s=Math.round(s);const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return(h?h+":"+String(m).padStart(2,"0"):m)+":"+String(x).padStart(2,"0")};
+const on=new Set([1,2,3,4]);
+const box=document.getElementById("alav");
+box.innerHTML=L.map(a=>`<label class="card on" id="c${a.n}"><input type="checkbox" checked data-n="${a.n}" id="i${a.n}"><span class="n">${a.n}</span><h3><span class="sw" aria-hidden="true"></span>${a.t}</h3><div class="g"><div class="t num" id="g${a.n}">−${fmt(a.g)}</div><div class="p" id="p${a.n}"></div></div><span class="f">${a.f}</span><p class="d">${a.d}</p></label>`).join("");
+box.addEventListener("change",e=>{const n=+e.target.dataset.n;e.target.checked?on.add(n):on.delete(n);document.getElementById("c"+n).classList.toggle("on",e.target.checked);calc()});
+const pct=document.getElementById("pct");pct.addEventListener("input",calc);
+function calc(){
+  const k=+pct.value/100;document.getElementById("pctV").textContent=pct.value+"%";
+  let g=0;L.forEach(a=>{const v=a.g*k;document.getElementById("g"+a.n).textContent="−"+fmt(v);document.getElementById("p"+a.n).textContent=(v/BASE*100).toFixed(1).replace(".",",")+"% da prova";if(on.has(a.n))g+=v});
+  const t=BASE-g;
+  document.getElementById("pTempo").textContent=fmt(t);
+  document.getElementById("pGanho").textContent="−"+fmt(g);
+  const rows=[...OUT.map(o=>({...o,e:0})),{l:"Ezequiel e Alexandre",t,e:1}].sort((a,b)=>a.t-b.t||b.e-a.e);
+  const pos=rows.findIndex(r=>r.e)+1;
+  document.getElementById("pPos").textContent=pos+"º";
+  document.getElementById("rank").innerHTML=rows.map((r,i)=>`<div class="rk${r.e?" eles":""}"><span class="pos">${i+1}º</span><span>${r.e?"<b>Ezequiel e Alexandre</b>"+(g>0?" (simulado)":""):r.l}</span><span class="num">${fmt(r.t)}</span></div>`).join("");
+}
+calc();
+const mx=300;
+document.getElementById("est").innerHTML=EST.map(([n,a,b])=>{const d=a-b;return`<div class="br"><div class="top"><b>${n}</b><span class="num" style="color:${d>20?"var(--marca-t)":"var(--suave)"}">${d>=0?"+":"−"}${fmt(Math.abs(d))}</span></div><div class="trk"><div class="bar a" style="width:${a/mx*100}%"></div><div class="bar b" style="width:${b/mx*100}%"></div></div></div>`}).join("");
+document.getElementById("voltas").innerHTML=V1.map((a,i)=>{const h=s=>Math.max(4,(s-240)/(330-240)*100);return`<div class="vt"><div class="cols"><div style="height:${h(a)}%;background:var(--marca)" title="Vocês ${fmt(a)}"></div><div style="height:${h(V2[i])}%;background:var(--lider)" title="1º lugar ${fmt(V2[i])}"></div></div><span>${i+1}ª<br>${fmt(a)}</span></div>`}).join("");
+</script>
+</body>
+</html>
