@@ -268,4 +268,25 @@ ARTIGOS = {
         ],
         "relacionados": ["athx", "hyrox"],
     },
+    "hyrox-rio-de-janeiro-2026": {
+        "data": "2026-10-26",
+        "titulo": "Hyrox Rio de Janeiro 2026: a etapa brasileira volta ao Riocentro",
+        "temas": ["hyrox", "radar"],
+        "desc": "O Hyrox Rio de Janeiro 2026 será no Riocentro, em novembro. Veja o que o site oficial informa e como transformar a etapa em meta para o seu grupo de treino.",
+        "foto": "sled", "pos": "50% 40%", "tag": "Radar",
+        "corpo": [
+            ("p", "O Brasil entra de novo no calendário do Hyrox. Segundo a <a href=\"https://hyrox.com/event/hyrox-rio-de-janeiro/\" rel=\"noopener\" target=\"_blank\">página oficial do evento</a>, a etapa do Rio de Janeiro da temporada 26/27 acontece em novembro de 2026, no Riocentro, na Barra Olímpica."),
+            ("h2", "O que se sabe"),
+            ("ul", [
+                "Local: Riocentro, Av. Salvador Allende, 6555, Barra Olímpica, Rio de Janeiro.",
+                "Data: a página indica o dia 21 de novembro de 2026.",
+                "Programação: o Hyrox informa que os detalhes são provisórios e podem mudar.",
+                "Edição anterior: a etapa de 2025 foi no mesmo endereço."]),
+            ("h2", "Por que fazer dessa etapa uma meta"),
+            ("p", "Ter uma data no calendário organiza o treino. Quem vai competir em dupla ou em grupo costuma manter mais a constância, dividir as estações e treinar as transições entre corrida e força, que são o coração da prova."),
+            ("p", "Quer entender o formato? Veja a <a href=\"/hyrox/\">página de Hyrox da comunidade</a> e leia <a href=\"/blog/como-comecar-no-hyrox/\">Como começar no Hyrox</a>. Antes de viajar, confira data e horário da sua divisão no site oficial."),
+            ("p", "Este texto é um resumo independente do que consta no site oficial do Hyrox e não tem vínculo com a organização."),
+        ],
+        "relacionados": ["hyrox", "athx"],
+    },
 }
