@@ -289,4 +289,25 @@ ARTIGOS = {
         ],
         "relacionados": ["hyrox", "athx"],
     },
+    "sao-silvestre-2026": {
+        "data": "2026-10-28",
+        "titulo": "São Silvestre 2026: 101ª edição será em 31 de dezembro, na Paulista",
+        "temas": ["corrida", "radar"],
+        "desc": "A São Silvestre 2026 será em 31 de dezembro, com 15 km na Avenida Paulista. Veja datas, regras do regulamento e como transformar a prova em meta para o seu grupo de corrida.",
+        "foto": "corrida-poca", "pos": "50% 50%", "tag": "Radar",
+        "corpo": [
+            ("p", "A última corrida do ano já tem data. Segundo o <a href=\"https://www.saosilvestre.com.br/\" rel=\"noopener\" target=\"_blank\">site oficial</a>, a 101ª Corrida Internacional de São Silvestre será em 31 de dezembro de 2026, com percurso de 15 km e largada e chegada na Avenida Paulista, em São Paulo."),
+            ("h2", "O que o regulamento informa"),
+            ("ul", [
+                "Inscrições: até 27 de novembro, ou antes, se as vagas acabarem.",
+                "Idade mínima: 18 anos completos até 31 de dezembro de 2026.",
+                "Retirada do kit: Expo São Silvestre, no Ibirapuera, de 26 a 30 de dezembro.",
+                "Atenção a golpes: o site oficial orienta se inscrever apenas pelos canais oficiais."]),
+            ("h2", "Por que correr em grupo"),
+            ("p", "Ter uma prova no calendário ajuda a manter a constância. Treinar em grupo ou com amigos facilita cumprir os treinos longos nas semanas que antecedem a corrida e deixa a preparação mais leve."),
+            ("p", "Quer começar ou retomar? Veja a <a href=\"/corrida/\">página de corrida da comunidade</a> e leia <a href=\"/blog/constancia-vence-motivacao/\">Constância vence motivação</a>. Antes de se inscrever, confira regras e valores no site oficial."),
+            ("p", "Este texto é um resumo independente do que consta no site oficial da São Silvestre e não tem vínculo com a organização."),
+        ],
+        "relacionados": ["corrida", "hyrox"],
+    },
 }
