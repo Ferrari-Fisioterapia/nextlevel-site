@@ -142,6 +142,39 @@ TEMAS = {"hyrox": "Hyrox", "crossfit": "CrossFit", "athx": "ATHX", "corrida": "C
          "prevencao": "Prevenção de lesão", "habitos": "Hábitos", "radar": "Radar"}
 
 ARTIGOS = {
+    "wall-ball-hyrox": {
+        "data": "2026-10-26",
+        "titulo": "Wall ball no Hyrox: como fazer bem a última estação",
+        "temas": ["hyrox", "prevencao"],
+        "desc": "Wall ball é a última estação do Hyrox. Veja como fazer o movimento, como dividir as repetições, como treinar cansado e quando a dor pede avaliação.",
+        "foto": "overhead", "pos": "50% 30%", "tag": "Hyrox",
+        "corpo": [
+            ("p", "O wall ball fecha a prova de Hyrox. Você chega nele depois de toda a corrida e das outras sete estações, e é aí que o movimento costuma desandar. A boa notícia: dá para treinar para chegar nessa hora com técnica e com um plano."),
+            ("h2", "Como fazer o movimento"),
+            ("ul", [
+                "Pés na largura dos ombros, bola na altura do peito, cotovelos por baixo dela.",
+                "Agache fundo, com o peito para cima e os joelhos na direção dos pés.",
+                "Suba rápido e use a força das pernas para lançar a bola; os braços só terminam o arremesso.",
+                "Olhe para um ponto fixo do alvo e receba a bola já descendo para o próximo agachamento."]),
+            ("p", "Altura do alvo, peso da bola e número de repetições mudam conforme a categoria. Confira sempre o regulamento oficial da sua prova no site do Hyrox."),
+            ("h2", "Divida antes de cansar"),
+            ("p", "Fazer tudo sem parar raramente é o melhor plano. Escolha blocos que você consiga manter, como séries curtas com uma pausa de poucas respirações entre elas, e respeite o combinado desde a primeira série. Em dupla, decidam antes quem faz quantas e quando trocam."),
+            ("h2", "Treine cansado, de propósito"),
+            ("p", "Na prova, o wall ball vem depois de muita corrida. Por isso vale incluir no treino blocos de corrida seguidos de wall ball, começando com poucas rodadas e aumentando aos poucos. Assim você aprende a manter o agachamento e o arremesso quando as pernas já estão pesadas."),
+            ("h2", "Fortaleça o que sustenta o movimento"),
+            ("p", "O wall ball depende de pernas fortes para agachar e subir muitas vezes, de um tronco firme para não perder a postura e de ombros que aguentem a bola acima da cabeça. Agachamento, front squat, thruster leve, prancha e exercícios de ombro com carga moderada, feitos ao longo da semana, ajudam o movimento a durar mais na prova. Treinar com a comunidade torna essa rotina mais fácil de manter."),
+            ("h2", "Erros comuns no fim da série"),
+            ("ul", [
+                "Joelho caindo para dentro na subida.",
+                "Lombar arredondando no fundo para buscar a bola.",
+                "Ombro arremessando sozinho, sem a ajuda das pernas.",
+                "Pausas longas demais, que esfriam o corpo e quebram o ritmo."]),
+            ("h2", "Quando a dor pede atenção"),
+            ("p", "Cansaço é esperado. Já dor no ombro, no joelho ou na lombar que piora a cada série, aparece no dia a dia ou continua no dia seguinte merece avaliação. O criador da comunidade, Ed Ferrari Jr, é fisioterapeuta ortopédico e esportivo e atende em Campinas (SP). Veja mais sobre <a href=\"https://www.edferrarijr.com/fisioterapia-esportiva-campinas/?utm_source=nextlevel&utm_medium=blog\" rel=\"noopener\" target=\"_blank\">fisioterapia esportiva</a>."),
+            ("p", "Quer entender a prova inteira? Leia <a href=\"/blog/como-comecar-no-hyrox/\">Como começar no Hyrox</a> e veja a <a href=\"/hyrox/\">página de Hyrox da comunidade</a>."),
+        ],
+        "relacionados": ["hyrox", "crossfit"],
+    },
     "como-comecar-no-hyrox": {
         "titulo": "Primeira prova de Hyrox: 5 passos para começar sem se perder",
         "temas": ["hyrox", "prevencao"],
