@@ -310,4 +310,25 @@ ARTIGOS = {
         ],
         "relacionados": ["corrida", "hyrox"],
     },
+    "mundial-de-hyrox-2027-hong-kong": {
+        "data": "2026-11-02",
+        "titulo": "Mundial de Hyrox 2027: Hong Kong, de 10 a 13 de junho",
+        "temas": ["hyrox", "radar"],
+        "desc": "O Hyrox definiu o Mundial de 2027 em Hong Kong, de 10 a 13 de junho. Veja como funciona a classificação e como montar sua temporada com a comunidade.",
+        "foto": "costas-sled", "pos": "50% 45%", "tag": "Radar",
+        "corpo": [
+            ("p", "O calendário do Hyrox ganhou um grande destino. Segundo a <a href=\"https://hyrox.com/hyrox-world-championships/\" rel=\"noopener\" target=\"_blank\">página oficial do Mundial</a>, o Hyrox World Championships 2027 acontece de 10 a 13 de junho, no Asiaworld-Expo, em Chek Lap Kok, Hong Kong."),
+            ("h2", "O que se sabe"),
+            ("ul", [
+                "Local e datas: Asiaworld-Expo, Hong Kong, de 10 a 13 de junho de 2027.",
+                "Classificação: as etapas da temporada 26/27 realizadas até o fim de semana de 16 de maio de 2027 dão vagas.",
+                "Depois de 16 de maio: as etapas contam para o Mundial de 2028.",
+                "Programação por divisão: ainda será anunciada."]),
+            ("h2", "Como transformar em meta"),
+            ("p", "Mesmo quem não pensa em Hong Kong pode usar o calendário para escolher uma etapa-alvo e organizar a temporada. Treinar em dupla ou em grupo ajuda a manter a constância e a dividir as estações."),
+            ("p", "Quer entender o formato? Veja a <a href=\"/hyrox/\">página de Hyrox da comunidade</a> e leia <a href=\"/blog/como-comecar-no-hyrox/\">Como começar no Hyrox</a>. Confira datas e regras no site oficial."),
+            ("p", "Este texto é um resumo independente do que consta no site oficial do Hyrox e não tem vínculo com a organização."),
+        ],
+        "relacionados": ["hyrox", "athx"],
+    },
 }
