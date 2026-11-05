@@ -331,4 +331,25 @@ ARTIGOS = {
         ],
         "relacionados": ["hyrox", "athx"],
     },
+    "athx-2027-calendario": {
+        "data": "2026-11-04",
+        "titulo": "ATHX 2027: calendário já está no ar, com a maior temporada até agora",
+        "temas": ["athx", "radar"],
+        "desc": "O ATHX divulgou o calendário de 2027, com etapas em Londres, San Diego, Las Vegas e Paris. Veja as primeiras datas e como transformar a temporada em meta para o seu grupo.",
+        "foto": "barra-mulher", "pos": "50% 40%", "tag": "Radar",
+        "corpo": [
+            ("p", "Quem gosta de provas híbridas já pode marcar as datas. Segundo o <a href=\"https://athxgames.com/events\" rel=\"noopener\" target=\"_blank\">site oficial do ATHX</a>, o calendário de 2027 já está no ar e é descrito como a maior temporada até agora, com etapas no Reino Unido, na Europa e nos EUA."),
+            ("h2", "As primeiras etapas"),
+            ("ul", [
+                "ATHX London: 23 e 24 de janeiro.",
+                "ATHX San Diego: 23 de janeiro.",
+                "ATHX Las Vegas: 6 de fevereiro, com cerca de 2 horas e meia de prova, seis zonas e três treinos, segundo a página do evento.",
+                "ATHX Paris: 13 e 14 de fevereiro, no Paris Event Centre."]),
+            ("h2", "Como transformar em meta"),
+            ("p", "Escolher uma etapa-alvo ajuda a organizar a preparação em blocos. Treinar em dupla ou em grupo facilita manter a constância e dividir as zonas, que misturam força e resistência."),
+            ("p", "Quer entender o formato? Veja a <a href=\"/athx/\">página de ATHX da comunidade</a> e leia <a href=\"/blog/athx-final-2026-lisboa/\">ATHX 2026: a final será em Lisboa</a>. Confira datas e regras no site oficial."),
+            ("p", "Este texto é um resumo independente do que consta no site oficial do ATHX e não tem vínculo com a organização."),
+        ],
+        "relacionados": ["athx", "hyrox"],
+    },
 }
