@@ -352,4 +352,25 @@ ARTIGOS = {
         ],
         "relacionados": ["athx", "hyrox"],
     },
+    "hyrox-sao-paulo-2027": {
+        "data": "2026-11-10",
+        "titulo": "Hyrox São Paulo 2027: 8 e 9 de maio, a maior edição já feita no Brasil",
+        "temas": ["hyrox", "radar"],
+        "desc": "O Hyrox São Paulo 2027 será em 8 e 9 de maio, em dois dias de prova. Veja o que o site oficial informa e como montar o grupo de treino até lá.",
+        "foto": "sled", "pos": "50% 40%", "tag": "Radar",
+        "corpo": [
+            ("p", "Quem corre Hyrox no Brasil já pode marcar a data. Segundo a <a href=\"https://hyrox.com/event/hyrox-sao-paulo/\" rel=\"noopener\" target=\"_blank\">página oficial do evento</a>, o Hyrox São Paulo acontece em 8 e 9 de maio de 2027, com dois dias de prova, e é descrito como a maior edição já realizada no Brasil."),
+            ("h2", "O que já está definido"),
+            ("ul", [
+                "Datas: 8 e 9 de maio de 2027.",
+                "Local: ainda a definir, segundo a página oficial.",
+                "Horários: provisórios.",
+                "Mundial: de acordo com o Hyrox, as etapas até o fim de semana de 16 de maio de 2027 dão vagas para o Mundial, em Hong Kong, de 10 a 13 de junho."]),
+            ("h2", "Como transformar em meta do grupo"),
+            ("p", "Com cerca de seis meses pela frente, dá para fechar a inscrição em grupo, dividir duplas e combinar treinos de estações e corridas. Quem treina junto costuma manter a constância."),
+            ("p", "Veja a <a href=\"/hyrox/\">página de Hyrox da comunidade</a> e leia <a href=\"/blog/mundial-de-hyrox-2027-hong-kong/\">Mundial de Hyrox 2027</a>. Confira datas e regras no site oficial."),
+            ("p", "Este texto é um resumo independente do que consta no site oficial do Hyrox e não tem vínculo com a organização."),
+        ],
+        "relacionados": ["hyrox", "athx"],
+    },
 }
