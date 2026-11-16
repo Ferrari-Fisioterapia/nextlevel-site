@@ -142,6 +142,42 @@ TEMAS = {"hyrox": "Hyrox", "crossfit": "CrossFit", "athx": "ATHX", "corrida": "C
          "prevencao": "Prevenção de lesão", "habitos": "Hábitos", "radar": "Radar"}
 
 ARTIGOS = {
+    "burpee-broad-jump-hyrox": {
+        "data": "2026-11-16",
+        "titulo": "Burpee broad jump no Hyrox: como fazer os 80 m sem quebrar",
+        "temas": ["hyrox", "prevencao"],
+        "desc": "Burpee broad jump no Hyrox: a regra dos dois pés, o ritmo para os 80 m da quarta estação, como aterrissar e como treinar para chegar inteiro no remo.",
+        "foto": "crossfit-barra", "pos": "50% 40%", "tag": "Hyrox",
+        "corpo": [
+            ("p", "O burpee broad jump é a quarta estação do Hyrox, logo depois do Sled Pull. Pelo <a href=\"https://hyrox.com/the-fitness-race/\" rel=\"noopener\" target=\"_blank\">formato oficial</a>, são 80 metros de burpee seguido de salto à frente, em todas as categorias. Muita gente chega aqui com as pernas já pesadas do sled, e é por isso que eu gosto de explicar essa estação com calma."),
+            ("h2", "O que a regra pede"),
+            ("ul", [
+                "No burpee, o peito encosta claramente no chão. Para levantar, pode apoiar um joelho.",
+                "No salto, os dois pés saem e aterrissam juntos. O <a href=\"https://maintain.hyrox.com/rulebooks/HYROX_RulebookSingles_EN.pdf\" rel=\"noopener\" target=\"_blank\">regulamento</a> tolera no máximo 5 cm de diferença entre a ponta de um pé e a do outro.",
+                "A estação só acaba quando você salta por cima da linha de chegada. Se um pé cair em cima da linha, é mais um salto.",
+                "A primeira falha dá advertência; a partir da segunda, cada uma soma 15 segundos ao seu tempo."]),
+            ("h2", "Salto curto e igual do primeiro ao último"),
+            ("p", "O conselho que eu te dou é não tentar ganhar distância nos primeiros saltos. Um salto longo exige mais da perna e da respiração, e isso cobra no fim da estação e no quilômetro de corrida que vem depois. Escolha um tamanho de salto que você consegue repetir sempre igual e mantenha o mesmo ritmo de descida e subida do burpee."),
+            ("h2", "Aterrissagem: onde mora o cuidado"),
+            ("ul", [
+                "Aterrisse com os dois pés ao mesmo tempo e os joelhos levemente dobrados.",
+                "Mantenha o joelho apontando para a ponta do pé, sem deixar ele cair para dentro.",
+                "Na descida do burpee, apoie as mãos e desça o corpo com controle, sem se jogar no chão.",
+                "Ao levantar, traga os pés para perto das mãos, sem passar da ponta dos dedos, e só então salte."]),
+            ("h2", "Como treinar"),
+            ("p", "Comece com distâncias menores e vá aumentando até os 80 metros. Depois, junte com o que vem antes e depois na prova: um trecho de corrida, o burpee broad jump e mais um trecho de corrida. Agachamento, afundo e saltos curtos e controlados ajudam a perna a aguentar a aterrissagem repetida. Treinar em dupla ajuda a manter o ritmo combinado."),
+            ("h2", "Erros comuns"),
+            ("ul", [
+                "Sair com saltos longos e quebrar na metade da estação.",
+                "Aterrissar com um pé na frente do outro e tomar advertência.",
+                "Cair no chão sem controle no burpee e sobrecarregar punho e ombro.",
+                "Parar em pé para respirar a cada salto em vez de manter um ritmo constante."]),
+            ("h2", "Quando a dor pede atenção"),
+            ("p", "Cansaço nas pernas e no peito é esperado. Já dor no punho ao apoiar a mão no chão, dor no joelho ao aterrissar ou dor que piora a cada treino merece avaliação. Eu sou fisioterapeuta ortopédico e esportivo e atendo em Campinas (SP). Veja mais sobre <a href=\"https://www.edferrarijr.com/fisioterapia-hyrox-campinas/?utm_source=nextlevel&utm_medium=blog\" rel=\"noopener\" target=\"_blank\">fisioterapia para quem faz Hyrox</a>."),
+            ("p", "Quer entender a prova inteira? Leia <a href=\"/blog/como-comecar-no-hyrox/\">Como começar no Hyrox</a> e veja a <a href=\"/hyrox/\">página de Hyrox da comunidade</a>."),
+        ],
+        "relacionados": ["hyrox", "corrida"],
+    },
     "como-comecar-no-hyrox": {
         "titulo": "Primeira prova de Hyrox: 5 passos para começar sem se perder",
         "temas": ["hyrox", "prevencao"],
