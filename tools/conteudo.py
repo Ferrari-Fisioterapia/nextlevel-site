@@ -142,6 +142,38 @@ TEMAS = {"hyrox": "Hyrox", "crossfit": "CrossFit", "athx": "ATHX", "corrida": "C
          "prevencao": "Prevenção de lesão", "habitos": "Hábitos", "radar": "Radar"}
 
 ARTIGOS = {
+    "skierg-hyrox": {
+        "data": "2026-11-09",
+        "titulo": "SkiErg no Hyrox: técnica e ritmo para a primeira estação",
+        "temas": ["hyrox", "prevencao"],
+        "desc": "SkiErg no Hyrox: como puxar com o tronco e não só com os braços, que ritmo usar nos 1.000 m da primeira estação e como treinar para chegar inteiro.",
+        "foto": "costas-sled", "pos": "50% 40%", "tag": "Hyrox",
+        "corpo": [
+            ("p", "O SkiErg abre a prova de Hyrox. Segundo o <a href=\"https://hyrox.com/the-fitness-race/\" rel=\"noopener\" target=\"_blank\">formato oficial</a>, são 1.000 metros no aparelho logo depois do primeiro quilômetro de corrida. Como ainda falta quase a prova inteira, o jeito como você passa por aqui muda o resto do dia."),
+            ("h2", "A força vem do tronco, não dos braços"),
+            ("ul", [
+                "Comece em pé, braços estendidos para cima segurando as alças, peso no meio do pé.",
+                "Puxe para baixo levando o quadril para trás e dobrando o tronco, como uma dobradiça.",
+                "Joelhos dobram pouco: o SkiErg não é um agachamento.",
+                "Os braços acompanham e terminam a puxada perto do quadril.",
+                "Volte em pé com calma e só então comece a próxima."]),
+            ("p", "Um sinal simples: se o braço queima muito antes das costas e do abdômen, provavelmente você está puxando só com o braço."),
+            ("h2", "Ritmo: não ganhe a prova no primeiro aparelho"),
+            ("p", "O erro mais comum é sair forte demais porque as pernas ainda estão inteiras. Escolha um ritmo que você conseguiria manter por mais tempo do que a estação dura, com puxadas longas e firmes em vez de rápidas e curtas. Os segundos que você ganha aqui costumam custar caro nas estações seguintes."),
+            ("h2", "Como treinar"),
+            ("p", "Junte corrida e SkiErg no mesmo treino: um trecho de corrida seguido de um bloco no aparelho, repetido algumas vezes. Use esses treinos para descobrir o seu ritmo de prova. Prancha, puxada e exercícios de quadril, como levantamento terra leve, ajudam a sustentar a técnica até o fim."),
+            ("h2", "Erros comuns"),
+            ("ul", [
+                "Dobrar o cotovelo cedo e puxar só com o braço.",
+                "Agachar a cada puxada, gastando as pernas que ainda vão correr.",
+                "Puxadas curtas e rápidas que aceleram demais a respiração.",
+                "Soltar as alças de qualquer jeito e perder o ritmo."]),
+            ("h2", "Quando a dor pede atenção"),
+            ("p", "Cansaço nos ombros e nas costas é esperado. Já dor no ombro ao levantar o braço no dia a dia, dor na lombar que continua no dia seguinte ou dor que piora a cada treino merece avaliação. O criador da comunidade, Ed Ferrari Jr, é fisioterapeuta ortopédico e esportivo e atende em Campinas (SP). Veja mais sobre <a href=\"https://www.edferrarijr.com/fisioterapia-hyrox-campinas/?utm_source=nextlevel&utm_medium=blog\" rel=\"noopener\" target=\"_blank\">fisioterapia para quem faz Hyrox</a>."),
+            ("p", "Quer entender a prova inteira? Leia <a href=\"/blog/como-comecar-no-hyrox/\">Como começar no Hyrox</a> e veja a <a href=\"/hyrox/\">página de Hyrox da comunidade</a>."),
+        ],
+        "relacionados": ["hyrox", "corrida"],
+    },
     "como-comecar-no-hyrox": {
         "titulo": "Primeira prova de Hyrox: 5 passos para começar sem se perder",
         "temas": ["hyrox", "prevencao"],
