@@ -164,6 +164,7 @@ ARTIGOS = {
     },
     "constancia-vence-motivacao": {
         "titulo": "Constância vence motivação: 5 jeitos de manter o treino quando a vontade some",
+        "titulo_seo": "Constância vence motivação: 5 jeitos de manter o treino",
         "temas": ["habitos"],
         "desc": "Como montar uma rotina de treino que você consiga manter: metas pequenas, horários fixos, descanso planejado e apoio da comunidade.",
         "foto": "corrida-bw", "pos": "50% 50%", "tag": "Hábitos",
@@ -184,6 +185,7 @@ ARTIGOS = {
     },
     "dor-no-treino-quando-procurar-um-profissional": {
         "titulo": "Dor no treino: 5 sinais de que é hora de procurar um profissional",
+        "titulo_seo": "Dor no treino: 5 sinais para procurar um profissional",
         "temas": ["prevencao", "crossfit", "hyrox"],
         "desc": "Nem toda dor no treino é lesão, mas algumas pedem avaliação. Veja sinais de atenção e o que fazer enquanto não consegue consulta.",
         "foto": "barra-mulher", "pos": "50% 25%", "tag": "Lesão",
@@ -228,8 +230,9 @@ ARTIGOS = {
     "hyrox-tampa-2026-proxima-etapa": {
         "data": "2026-10-21",
         "titulo": "Hyrox Tampa 2026: a próxima etapa do circuito, de 22 a 25 de outubro",
+        "titulo_seo": "Hyrox Tampa 2026: próxima etapa, de 22 a 25 de outubro",
         "temas": ["hyrox", "radar"],
-        "desc": "Depois de São Paulo, o Hyrox segue para Tampa (EUA), de 22 a 25 de outubro de 2026. Veja o que se sabe da etapa e o que dá para aprender com o calendário da temporada.",
+        "desc": "Depois de São Paulo, o Hyrox segue para Tampa (EUA), de 22 a 25 de outubro de 2026. Veja o que se sabe da etapa e o que aprender com a temporada.",
         "foto": "sled", "pos": "50% 40%", "tag": "Radar",
         "corpo": [
             ("p", "O circuito do Hyrox não para: depois da etapa de São Paulo, a próxima parada é Tampa, na Flórida (EUA). A página oficial do evento, no <a href=\"https://hyrox.com/event/hyrox-tampa/\" rel=\"noopener\" target=\"_blank\">site do Hyrox</a>, marca a prova de 22 a 25 de outubro de 2026."),
@@ -271,6 +274,7 @@ ARTIGOS = {
     "hyrox-rio-de-janeiro-2026": {
         "data": "2026-10-26",
         "titulo": "Hyrox Rio de Janeiro 2026: a etapa brasileira volta ao Riocentro",
+        "titulo_seo": "Hyrox Rio de Janeiro 2026: etapa volta ao Riocentro",
         "temas": ["hyrox", "radar"],
         "desc": "O Hyrox Rio de Janeiro 2026 será no Riocentro, em novembro. Veja o que o site oficial informa e como transformar a etapa em meta para o seu grupo de treino.",
         "foto": "sled", "pos": "50% 40%", "tag": "Radar",
@@ -292,8 +296,9 @@ ARTIGOS = {
     "sao-silvestre-2026": {
         "data": "2026-10-28",
         "titulo": "São Silvestre 2026: 101ª edição será em 31 de dezembro, na Paulista",
+        "titulo_seo": "São Silvestre 2026: 101ª edição, 31 de dezembro",
         "temas": ["corrida", "radar"],
-        "desc": "A São Silvestre 2026 será em 31 de dezembro, com 15 km na Avenida Paulista. Veja datas, regras do regulamento e como transformar a prova em meta para o seu grupo de corrida.",
+        "desc": "A São Silvestre 2026 será em 31 de dezembro, com 15 km na Avenida Paulista. Veja datas, regras e como transformar a prova em meta para o seu grupo.",
         "foto": "corrida-poca", "pos": "50% 50%", "tag": "Radar",
         "corpo": [
             ("p", "A última corrida do ano já tem data. Segundo o <a href=\"https://www.saosilvestre.com.br/\" rel=\"noopener\" target=\"_blank\">site oficial</a>, a 101ª Corrida Internacional de São Silvestre será em 31 de dezembro de 2026, com percurso de 15 km e largada e chegada na Avenida Paulista, em São Paulo."),
@@ -334,8 +339,9 @@ ARTIGOS = {
     "athx-2027-calendario": {
         "data": "2026-11-04",
         "titulo": "ATHX 2027: calendário já está no ar, com a maior temporada até agora",
+        "titulo_seo": "ATHX 2027: calendário já está no ar, a maior temporada",
         "temas": ["athx", "radar"],
-        "desc": "O ATHX divulgou o calendário de 2027, com etapas em Londres, San Diego, Las Vegas e Paris. Veja as primeiras datas e como transformar a temporada em meta para o seu grupo.",
+        "desc": "O ATHX divulgou o calendário de 2027, com etapas em Londres, San Diego, Las Vegas e Paris. Veja as primeiras datas e como transformar a temporada em meta.",
         "foto": "barra-mulher", "pos": "50% 40%", "tag": "Radar",
         "corpo": [
             ("p", "Quem gosta de provas híbridas já pode marcar as datas. Segundo o <a href=\"https://athxgames.com/events\" rel=\"noopener\" target=\"_blank\">site oficial do ATHX</a>, o calendário de 2027 já está no ar e é descrito como a maior temporada até agora, com etapas no Reino Unido, na Europa e nos EUA."),
@@ -355,6 +361,7 @@ ARTIGOS = {
     "hyrox-sao-paulo-2027": {
         "data": "2026-11-10",
         "titulo": "Hyrox São Paulo 2027: 8 e 9 de maio, a maior edição já feita no Brasil",
+        "titulo_seo": "Hyrox São Paulo 2027: 8 e 9 de maio, maior edição",
         "temas": ["hyrox", "radar"],
         "desc": "O Hyrox São Paulo 2027 será em 8 e 9 de maio, em dois dias de prova. Veja o que o site oficial informa e como montar o grupo de treino até lá.",
         "foto": "sled", "pos": "50% 40%", "tag": "Radar",
@@ -376,8 +383,9 @@ ARTIGOS = {
     "athx-parceiro-oficial-crossfit": {
         "data": "2026-11-17",
         "titulo": "ATHX é parceiro oficial do CrossFit: o que isso significa para a comunidade",
+        "titulo_seo": "ATHX é parceiro oficial do CrossFit: o que muda",
         "temas": ["athx", "crossfit", "radar"],
-        "desc": "O CrossFit apresentou o ATHX Games como série oficial de eventos parceiros. Veja o que as páginas oficiais informam e como levar o formato para o treino do seu grupo.",
+        "desc": "O CrossFit apresentou o ATHX Games como série oficial de eventos parceiros. Veja o que as páginas oficiais informam e como levar o formato ao treino.",
         "foto": "overhead", "pos": "50% 30%", "tag": "Radar",
         "corpo": [
             ("p", "Quem treina CrossFit e quer competir ganhou mais uma opção. Em <a href=\"https://games.crossfit.com/article/athx-games-an-official-crossfit-partner-event-series\" rel=\"noopener\" target=\"_blank\">publicação de 17 de setembro de 2026</a>, o CrossFit apresentou o ATHX Games como uma série oficial de eventos parceiros."),

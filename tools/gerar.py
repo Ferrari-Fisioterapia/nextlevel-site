@@ -19,8 +19,17 @@ def esc(s):
     return s.replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;")
 
 
+def curto(titulo, limite=60):
+    """Tira a marca do fim do título quando ele passa do limite (o Google corta acima de ~60)."""
+    if len(titulo) > limite and " | " in titulo:
+        titulo = titulo.rsplit(" | ", 1)[0]
+    return titulo
+
+
 def head(titulo, desc, caminho, ld, og=OG, robots="index, follow, max-image-preview:large"):
     u = BASE + caminho
+    titulo = curto(titulo)
+    preload_poster = '<link rel="preload" as="image" href="/assets/img/foto-dupla.webp" fetchpriority="high">\n' if caminho == "/" else ""
     lds = "".join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in ld)
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -40,7 +49,7 @@ def head(titulo, desc, caminho, ld, og=OG, robots="index, follow, max-image-prev
 <link rel="preload" href="/assets/fonts/BarlowCondensed-800i.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/Barlow-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="/assets/img/logo.png">
-<link rel="stylesheet" href="/css/site.css">
+{preload_poster}<link rel="stylesheet" href="/css/site.css">
 <script>document.documentElement.classList.add('js')</script>
 <script src="/assets/js/site.js" defer></script>
 {lds}</head>
@@ -96,6 +105,9 @@ def org_ld():
     return {"@context": "https://schema.org", "@graph": [
         {"@type": "Organization", "@id": BASE + "/#org", "name": NOME, "alternateName": "Next Level Fitness", "url": BASE + "/",
          "logo": BASE + "/assets/img/logo.png", "sameAs": [IG],
+         "description": "Comunidade de treino em grupo para quem faz Hyrox, CrossFit, ATHX e corrida, com conteúdo e encontros para treinar com constância e sem lesão.",
+         "knowsAbout": ["Hyrox", "CrossFit", "ATHX", "Corrida", "Treino funcional"],
+         "contactPoint": {"@type": "ContactPoint", "contactType": "customer service", "url": DM, "availableLanguage": "pt-BR"},
          "founder": {"@type": "Person", "name": "Ed Ferrari Jr", "url": ED + "/"}},
         {"@type": "WebSite", "@id": BASE + "/#site", "url": BASE + "/", "name": NOME, "inLanguage": "pt-BR", "publisher": {"@id": BASE + "/#org"}}]}
 
@@ -269,7 +281,7 @@ def artigo(slug):
     # continue lendo: mais temas em comum primeiro, depois os mais recentes
     outros = [s for s in recentes() if s != slug]
     outros.sort(key=lambda s: len(set(temas(ARTIGOS[s])) & set(tt)), reverse=True)
-    return c, head(a["titulo"] + " | " + NOME, a["desc"], c, ld, og=f"{BASE}/assets/img/{a['foto']}.webp") + f"""<main>
+    return c, head(a.get("titulo_seo", a["titulo"]) + " | " + NOME, a["desc"], c, ld, og=f"{BASE}/assets/img/{a['foto']}.webp") + f"""<main>
 <section class="pg-hero com-foto"><div class="fundo-img" style="--pos:{a['pos']}">{foto(a['foto'], a['titulo'], 1600, 1000, lazy=False)}</div><div class="s-wrap"><span class="rotulo">{a['tag']} · {data_br(a)} · {leitura(a)} min de leitura</span><div class="faixas"></div>
 <h1 class="h1-menor">{a['titulo']}</h1><div class="b-chips">{chips}</div></div></section>
 <article class="h-sec"><div class="s-wrap s-main">{corpo}
