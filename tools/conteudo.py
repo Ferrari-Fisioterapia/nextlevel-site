@@ -142,6 +142,42 @@ TEMAS = {"hyrox": "Hyrox", "crossfit": "CrossFit", "athx": "ATHX", "corrida": "C
          "prevencao": "Prevenção de lesão", "habitos": "Hábitos", "radar": "Radar"}
 
 ARTIGOS = {
+    "sled-push-hyrox": {
+        "data": "2026-11-23",
+        "titulo": "Sled Push no Hyrox: posição, passada e ritmo nos 50 m",
+        "temas": ["hyrox", "prevencao"],
+        "desc": "Sled Push no Hyrox: como posicionar o corpo, que passada usar nos 4 trechos de 12,5 m da segunda estação e como treinar para não travar no meio.",
+        "foto": "sled", "pos": "50% 50%", "tag": "Hyrox",
+        "corpo": [
+            ("p", "O Sled Push é a segunda estação do Hyrox, logo depois do SkiErg. Pelo <a href=\"https://hyrox.com/the-fitness-race/\" rel=\"noopener\" target=\"_blank\">formato oficial</a>, são 50 metros empurrando o trenó, divididos em quatro trechos de 12,5 m. O peso muda por categoria, então vale conferir o da sua no <a href=\"https://maintain.hyrox.com/rulebooks/HYROX_RulebookSingles_EN.pdf\" rel=\"noopener\" target=\"_blank\">regulamento</a>. É uma estação curta, mas é onde muita gente trava e chega na corrida seguinte com as pernas queimando."),
+            ("h2", "O que a regra pede"),
+            ("ul", [
+                "Você usa a raia que te deram, do começo ao fim.",
+                "O trenó e você começam dentro da área de largada.",
+                "O trenó precisa passar inteiro da marca de 12,5 m antes de você mudar de direção.",
+                "Falhas dão advertência e, a partir da segunda, penalidade de tempo. Pular um trecho é muito mais grave, então conte os quatro."]),
+            ("h2", "Posição: o corpo empurra, não só o braço"),
+            ("ul", [
+                "Incline o tronco à frente, com as costas firmes, sem arredondar.",
+                "Escolha onde segurar: braços mais esticados deixam o corpo mais baixo; braços dobrados e peito perto do trenó ajudam quando a perna cansa.",
+                "Empurre o chão com a ponta do pé, como se estivesse subindo uma rampa.",
+                "Olhe para o chão alguns metros à frente, não para o teto."]),
+            ("h2", "Passada curta e constante"),
+            ("p", "O conselho que eu te dou é não arrancar com passos enormes. Passadas curtas e rápidas mantêm o trenó andando, e um trenó que para custa muito mais para sair do lugar de novo. Na virada de cada trecho, troque de lado com calma e recomece com o mesmo ritmo."),
+            ("h2", "Como treinar"),
+            ("p", "Se o seu box tem trenó, treine trechos curtos com peso parecido com o da prova e junte com corrida antes e depois. Sem trenó, agachamento, afundo, subida de caixa e panturrilha ajudam a preparar a perna. Treinar em dupla ajuda a combinar as trocas, que é o que decide essa estação em prova de duplas."),
+            ("h2", "Erros comuns"),
+            ("ul", [
+                "Arrancar forte no primeiro trecho e travar no terceiro.",
+                "Arredondar as costas para empurrar com o tronco.",
+                "Deixar o trenó parar no meio do trecho.",
+                "Virar antes de o trenó passar inteiro da marca."]),
+            ("h2", "Quando a dor pede atenção"),
+            ("p", "Queimação nas pernas é esperada. Já dor na lombar que continua no dia seguinte, dor no joelho ao subir escada ou dor na panturrilha que aparece de repente durante o esforço merecem avaliação. Eu sou fisioterapeuta ortopédico e esportivo e atendo em Campinas (SP). Veja mais sobre <a href=\"https://www.edferrarijr.com/fisioterapia-hyrox-campinas/?utm_source=nextlevel&utm_medium=blog\" rel=\"noopener\" target=\"_blank\">fisioterapia para quem faz Hyrox</a>."),
+            ("p", "Quer entender a prova inteira? Leia <a href=\"/blog/como-comecar-no-hyrox/\">Como começar no Hyrox</a> e veja a <a href=\"/hyrox/\">página de Hyrox da comunidade</a>."),
+        ],
+        "relacionados": ["hyrox", "corrida"],
+    },
     "como-comecar-no-hyrox": {
         "titulo": "Primeira prova de Hyrox: 5 passos para começar sem se perder",
         "temas": ["hyrox", "prevencao"],
