@@ -406,4 +406,25 @@ ARTIGOS = {
         ],
         "relacionados": ["hyrox", "athx"],
     },
+    "athx-parceiro-oficial-crossfit": {
+        "data": "2026-11-17",
+        "titulo": "ATHX é parceiro oficial do CrossFit: o que isso significa para a comunidade",
+        "temas": ["athx", "crossfit", "radar"],
+        "desc": "O CrossFit apresentou o ATHX Games como série oficial de eventos parceiros. Veja o que as páginas oficiais informam e como levar o formato para o treino do seu grupo.",
+        "foto": "overhead", "pos": "50% 30%", "tag": "Radar",
+        "corpo": [
+            ("p", "Quem treina CrossFit e quer competir ganhou mais uma opção. Em <a href=\"https://games.crossfit.com/article/athx-games-an-official-crossfit-partner-event-series\" rel=\"noopener\" target=\"_blank\">publicação de 17 de setembro de 2026</a>, o CrossFit apresentou o ATHX Games como uma série oficial de eventos parceiros."),
+            ("h2", "O que o ATHX informa"),
+            ("ul", [
+                "Competição de fitness funcional realizada em várias cidades do mundo.",
+                "Três divisões: LITE (duplas, com cargas adaptadas), ATHX e PRO.",
+                "Três treinos que se mantêm durante a temporada.",
+                "Os melhores colocados avançam para a final, que em 2026 será em Lisboa, de 27 a 29 de novembro."]),
+            ("h2", "Como levar para o grupo"),
+            ("p", "Como os treinos são conhecidos, o grupo pode ensaiar cada um deles em blocos, dividir tarefas em dupla e escolher uma etapa-alvo. Treinar junto ajuda a manter a constância."),
+            ("p", "Veja as páginas de <a href=\"/crossfit/\">CrossFit</a> e de <a href=\"/athx/\">ATHX</a> da comunidade e leia <a href=\"/blog/athx-2027-calendario/\">ATHX 2027: calendário já está no ar</a>. Confira datas e regras nos sites oficiais."),
+            ("p", "Este texto é um resumo independente do que consta nas páginas oficiais do CrossFit e do ATHX e não tem vínculo com as organizações."),
+        ],
+        "relacionados": ["athx", "crossfit"],
+    },
 }
