@@ -142,6 +142,37 @@ TEMAS = {"hyrox": "Hyrox", "crossfit": "CrossFit", "athx": "ATHX", "corrida": "C
          "prevencao": "Prevenção de lesão", "habitos": "Hábitos", "radar": "Radar"}
 
 ARTIGOS = {
+    "sandbag-lunges-hyrox": {
+        "data": "2026-11-02",
+        "titulo": "Sandbag lunges no Hyrox: como passar pelos 100 m de afundo",
+        "temas": ["hyrox", "prevencao"],
+        "desc": "Sandbag lunges no Hyrox: o que a estação pede, técnica do afundo com saco, como dividir os 100 m, como treinar cansado e quando a dor pede atenção.",
+        "foto": "sandbag", "pos": "50% 35%", "tag": "Hyrox",
+        "corpo": [
+            ("p", "A estação de sandbag lunges é a penúltima do Hyrox: 100 metros de afundos com um saco de areia apoiado nos ombros, logo depois de muita corrida. Segundo o <a href=\"https://maintain.hyrox.com/rulebooks/HYROX_RulebookSingles_EN.pdf\" rel=\"noopener\" target=\"_blank\">regulamento oficial do Hyrox 26/27</a>, o saco é de 10 kg no Open feminino, 20 kg no Open masculino e no Pro feminino e 30 kg no Pro masculino. Confira sempre a regra da sua categoria antes da prova."),
+            ("h2", "Como fazer o afundo com o saco"),
+            ("ul", [
+                "Saco apoiado atrás do pescoço, sobre os ombros, com as mãos firmes segurando.",
+                "Tronco em pé e abdômen firme; evite curvar as costas para a frente sob o peso.",
+                "Passo de tamanho médio: nem curto demais, que desequilibra, nem longo demais, que cansa mais rápido.",
+                "Joelho de trás encosta no chão com controle, sem bater.",
+                "Pé da frente apoiado inteiro e joelho na direção dos dedos do pé."]),
+            ("h2", "Divida os 100 m"),
+            ("p", "Cem metros de afundo com carga é longo, então a estratégia conta. Escolha blocos de afundos que você consiga manter, com pausas curtas em pé para respirar e ajeitar o saco, em vez de ir até não aguentar mais. Começar num ritmo controlado costuma render mais no fim."),
+            ("h2", "Treine cansado, de propósito"),
+            ("p", "Na prova, as pernas já chegam pesadas. Inclua no treino blocos de corrida seguidos de afundos com carga, começando com distâncias curtas e aumentando aos poucos. Exercícios de uma perna só, como afundo búlgaro e step-up, ajudam a construir a força que a estação pede."),
+            ("h2", "Erros comuns"),
+            ("ul", [
+                "Afundo raso, sem encostar o joelho, que pode não contar na prova.",
+                "Tronco caindo para a frente e lombar sobrecarregada.",
+                "Joelho da frente caindo para dentro na subida.",
+                "Largar rápido demais e quebrar no meio da estação."]),
+            ("h2", "Quando a dor pede atenção"),
+            ("p", "Pernas queimando é esperado. Já dor no joelho, no quadril ou na lombar que piora a cada treino, aparece ao subir escada ou continua no dia seguinte merece avaliação. O criador da comunidade, Ed Ferrari Jr, é fisioterapeuta ortopédico e esportivo e atende em Campinas (SP). Veja mais sobre <a href=\"https://www.edferrarijr.com/fisioterapia-hyrox-campinas/?utm_source=nextlevel&utm_medium=blog\" rel=\"noopener\" target=\"_blank\">fisioterapia para quem faz Hyrox</a>."),
+            ("p", "Quer entender a prova inteira? Leia <a href=\"/blog/como-comecar-no-hyrox/\">Como começar no Hyrox</a> e veja a <a href=\"/hyrox/\">página de Hyrox da comunidade</a>."),
+        ],
+        "relacionados": ["hyrox", "corrida"],
+    },
     "como-comecar-no-hyrox": {
         "titulo": "Primeira prova de Hyrox: 5 passos para começar sem se perder",
         "temas": ["hyrox", "prevencao"],
