@@ -394,4 +394,25 @@ ARTIGOS = {
         ],
         "relacionados": ["athx", "crossfit"],
     },
+    "athx-world-finals-lisboa-2026": {
+        "data": "2026-11-24",
+        "titulo": "ATHX World Finals em Lisboa: de 27 a 29 de novembro, com quem se classificou no ano",
+        "temas": ["athx", "radar"],
+        "desc": "A final do ATHX será em Lisboa, de 27 a 29 de novembro. Veja o que o site oficial informa sobre a classificação e como acompanhar com a comunidade.",
+        "foto": "barra-mulher", "pos": "50% 40%", "tag": "Radar",
+        "corpo": [
+            ("p", "A temporada do ATHX chega ao fim esta semana. Segundo o <a href=\"https://athxgames.com/events\" rel=\"noopener\" target=\"_blank\">site oficial</a>, a final acontece de 27 a 29 de novembro, na Feira Internacional de Lisboa, no Parque das Nações."),
+            ("h2", "Como a vaga é decidida"),
+            ("ul", [
+                "Os melhores colocados de cada etapa recebem o convite para a final, segundo a <a href=\"https://athxgames.com/finals-qualification/2026\" rel=\"noopener\" target=\"_blank\">página de qualificação</a>.",
+                "Quem recebe o convite tem 7 dias para confirmar a vaga; se vence, ela passa para o próximo da lista.",
+                "Amsterdam, em 7 de novembro, foi a última etapa classificatória da Europa.",
+                "Os três treinos se mantêm durante toda a temporada, informou o CrossFit ao apresentar o ATHX como série oficial de eventos parceiros."]),
+            ("h2", "Como acompanhar com o grupo"),
+            ("p", "Como os treinos da final são os mesmos da temporada, o grupo pode ensaiar cada um deles no fim de semana e comparar com o que vê nas divisões LITE, ATHX e PRO. Quem pensa em 2027 já pode escolher a etapa-alvo e marcar a dupla."),
+            ("p", "Veja a <a href=\"/athx/\">página de ATHX da comunidade</a> e leia <a href=\"/blog/athx-parceiro-oficial-crossfit/\">ATHX é parceiro oficial do CrossFit</a>. Confira datas e horários nos sites oficiais."),
+            ("p", "Este texto é um resumo independente do que consta nas páginas oficiais do ATHX e do CrossFit e não tem vínculo com as organizações."),
+        ],
+        "relacionados": ["athx", "crossfit"],
+    },
 }
